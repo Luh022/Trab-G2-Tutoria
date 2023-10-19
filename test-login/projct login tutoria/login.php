@@ -3,12 +3,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["login"];
     $password = $_POST["senha"];
     
-    // Aqui você pode adicionar a lógica de autenticação, como verificar em um banco de dados
-    // Se as credenciais estão corretas, você pode redirecionar o usuário para uma página de boas-vindas.
+    //include('selenium.webdriver');
     
     if ($username === "seu_usuario" && $password === "sua_senha") {
-        header("Location: welcome.php");
+        header("Location: login.php");
     } else {
-        echo "Credenciais inválidas. Tente novamente.";
+        echo "Bem Vindo! Foi logado com sucesso.";
     }
 }
+
+
+//else {
+        //echo "Credenciais inválidas. Tente novamente.";
+    //}
