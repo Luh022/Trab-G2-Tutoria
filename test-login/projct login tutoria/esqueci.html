@@ -19,13 +19,16 @@
         <p>Crie uma nova senha.</p>
         <form action="login.php" method="post">
             <div class="campo">
-                <input type="senhanew" name="login" id="ilogin" placeholder="sua nova senha" autocomplete="senha" required maxlength="30">
-                <label for="ilogin">Login</label>
+                <input type="password" name="senha" id="isenha" placeholder="confirme sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                <label for="isenha">Senha</label>
             </div>
-
+            
             <div class="campo">
                 <input type="password" name="senha" id="isenha" placeholder="confirme sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
                 <label for="isenha">Senha</label>
             </div>
+
+            <input type="submit" value="Criar"  class="botao">
+           
 </body>
 </html>
